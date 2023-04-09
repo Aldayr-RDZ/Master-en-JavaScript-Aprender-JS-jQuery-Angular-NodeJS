@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Aprendiendo JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="js/05-ajax.js"></script>
+    <style>
+        #datos{
+            border: 2px solid green;
+            width: 250px;
+            height: 250px;
+            overflow: scroll;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aprendiendo JQuery con Victor Robles Web - Ajax</h1>
+    
+    <form action="https://reqres.in/api/users" method="post" id="formulario">
+        Nombre : <input type="text" name="name" > 
+        Trabajo : <input type="text" name="job" > 
+        <input type="submit"> 
+        <br>
+    </form>
+    <br>
+    <div id="datos">
+
+    </div>
+</body>
+
+</html>

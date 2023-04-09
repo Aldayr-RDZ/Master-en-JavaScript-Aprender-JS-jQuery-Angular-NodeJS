@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+    padding-top: 10px;
+
+}
+
+h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+form {
+    width: 60%;
+}
+
+form label {
+    display: block;
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea {
+    width: 80%;
+    padding: 5px;
+}
+
+form input[type="submit"] {
+
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    margin-top: 15px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+
+form input[type="submit"]:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+form input[disabled] {
+    opacity: 0.4;
+}
+
+.validation {
+    margin-top: 60px;
+    width: 35%;
+    font-size: small;
+    border: none;
+    height: 15rem;
+}
+
+.validation p {
+    margin-top: 15px;
+    color: white;
+    padding-left: 10px;
+    background: red;
+    width: 210px;
+}
+
+.__link{
+    color: rgb(47 20 254 / 98%);
+    text-decoration: underline;
+}
+
+.message{
+    font-size: medium;
+    padding: 5px;
+    background: #4bf051;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 10px;
+}
+
+.failed{
+    font-size: medium;
+    padding: 5px;
+    background: #f0594b;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 10px;
+}

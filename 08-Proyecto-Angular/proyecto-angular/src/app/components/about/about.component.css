@@ -1,0 +1,44 @@
+/* Sobre mi*/
+
+#title{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 70px;
+    padding-top: 20px;
+}
+
+#title h1{
+    font-family: "finger";
+    font-size: 60px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+#title h2{
+    font-family: "yanone";
+    font-size: 25px;
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+article.about{
+    
+    margin: 0px 110px auto;
+    
+    
+}
+
+.about h2{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.about p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+}

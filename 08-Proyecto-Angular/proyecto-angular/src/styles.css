@@ -1,0 +1,110 @@
+/* You can add global styles to this file, and also import other style files */
+/* Importar fuentes custom*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@font-face{
+    font-family: "yanone";
+    src: url("./assets/css/fonts/yanone.ttf");
+}
+
+@font-face {
+    font-family: "finger";
+    src: url("./assets/css/fonts/finger.ttf");
+}
+
+/* Generales*/
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    
+}
+
+
+/* Barra de navegacion / cabecera */
+
+
+.logo{
+    color: #edf0f1;
+    font-weight:  bold;
+}
+
+header{
+    position: sticky;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px 10%;
+   background-color: #24252A;
+}
+
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover, .actived{
+    color: #0088a9;
+}
+
+
+
+
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+
+
+/*Contenedor principal*/
+
+#content{
+    min-height: 700px;
+    height: auto;
+    width: 75%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 40px black;
+    background: rgba(255, 255, 255, 0.7);
+    /* margin-top: 50px; */
+    
+}
+
+
+
+
+/*Pie de pagina*/
+footer{
+    width: 75%;
+    margin: 0px auto;
+    padding-top: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+

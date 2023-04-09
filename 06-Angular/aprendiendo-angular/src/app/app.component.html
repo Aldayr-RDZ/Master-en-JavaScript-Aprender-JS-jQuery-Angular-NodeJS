@@ -1,0 +1,28 @@
+
+<div
+  [ngStyle]="{'background': config.fondo, 'padding': '20px', 'border':'5px solid black', 'border-color':config.color}">
+  <h1>Bienvenido a {{config.titulo}}</h1>
+  <p>
+    {{config.descripcion}}
+  </p>
+ 
+  <nav>
+    <a [routerLink]="['/home']" routerLinkActive="active"  [routerLinkActiveOptions]=" { exact: true}" >Home</a>
+    &nbsp;
+    <a [routerLink]="['/zapatillas']" routerLinkActive="active" [routerLinkActiveOptions]=" { exact: true}" >Zapatillas</a>
+    &nbsp;
+    <a [routerLink]="['/videojuegos']" routerLinkActive="active" [routerLinkActiveOptions]=" { exact: true}" >Videojuegos</a>
+    &nbsp;
+    <a [routerLink]="['/cursos']" routerLinkActive="active" [routerLinkActiveOptions]=" { exact: true}" >Cursos</a>
+    &nbsp;
+    <a [routerLink]="['/externo']" routerLinkActive="active" [routerLinkActiveOptions]=" { exact: true}" >Externo</a>
+    &nbsp;
+    <a [routerLink]="['/contacto']" routerLinkActive="active" [routerLinkActiveOptions]=" { exact: true}" >Contacto</a>
+  </nav>
+  <hr>
+  <!-- <button (click)="ocultarVideoJuegos(false)" *ngIf="mostrar_videojuegos">Ocultar</button>
+  <button (click)="ocultarVideoJuegos(true)" *ngIf="!mostrar_videojuegos">Mostrar</button>
+  <videojuego *ngIf="mostrar_videojuegos"></videojuego> -->
+  <!-- <app-zapatillas></app-zapatillas> -->
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,45 @@
+<!-- <div class="container" *ngIf="project">
+
+    <div class="image">
+        <img src="{{url+'get-image/'+project.image}}"  *ngIf="project.image" >
+    </div>
+    <div class="data">
+        <h1>{{project.name}}</h1>
+        <h2>{{project.description}}</h2>
+        <p>{{project.category}}</p>
+        <p>{{project.langs}}</p>
+        <p class="__buttons" *ngIf="confirm==false">
+            <a [routerLink]="['/editar-proyecto', project._id]" class="button-edit">Editar</a>
+            <a (click)="deleteProject(project._id)" class="button-delete">Borrar</a>
+        </p>
+
+        
+    </div>
+
+    
+</div> -->
+
+<div class="container" *ngIf="project">
+    <div class="img-izq">
+        <figure>
+            <img src="{{url+'get-image/'+project.image}}"  *ngIf="project.image" >
+        </figure>
+    </div>
+   
+    <div class="data-der">
+        <h1>{{project.name}}</h1>
+        <h2>{{project.description}}</h2>
+        <p>{{project.category}}</p>
+        <p>{{project.langs}}</p>
+        <p class="__buttons" *ngIf="confirm==false">
+            <a [routerLink]="['/editar-proyecto', project._id]" class="button-edit">Editar</a>
+            <a (click)="setConfirm(true)" class="button-delete">Borrar</a>
+        </p>
+
+        <div class="__buttons" *ngIf="confirm==true">
+            <div style="margin-bottom: 15px; font-size: small;">¿Estas seguro de elimianr este elemento?</div>
+            <a (click)="setConfirm(false)" class="button-edit">Cancelar</a>
+            <a (click)="deleteProject(project._id)" class="button-delete">Eliminar Definitivamente</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+
+  <header>
+   <div class="logo">Aldayr Dev</div>
+    <nav>
+      <ul class="nav__links">
+        <li><a [routerLink]="['/sobre-mi']" routerLinkActive="actived">Sobre mi </a></li>
+        <li><a [routerLink]="['/proyectos']"  routerLinkActive="actived">Proyectos</a></li>
+        
+        <li><a [routerLink]="['/crear-proyecto']"  routerLinkActive="actived">Crear Proyecto</a></li>
+        
+      </ul>
+     
+    </nav>
+    <a [routerLink]="['/contacto']"><button>Contacto</button> </a>
+
+  </header>
+
+
+
+
+<section id="content">
+  <router-outlet></router-outlet>
+</section>
+
+
+<footer>
+  Master en JavaScript de victorroblesweb
+</footer>
